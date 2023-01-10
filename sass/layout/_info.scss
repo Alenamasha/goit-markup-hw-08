@@ -1,0 +1,54 @@
+
+.main-info {
+    padding: 94px;
+  }
+  
+  .main-info__list {
+  @include grid($gap-grid: 4);
+    // $items: 4;
+  }
+  
+  .main-info__item>.title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    line-height: 1.71;
+  }
+
+  .main-info__item {
+    flex-basis: calc((100% - $indent * (4 - 1)) / 4);
+  }
+  
+  .main-info__item>.main-info__desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+  }
+  
+  .main-info__aside {
+    display: flex;
+    background-color: $color-backgraund-team;
+    justify-content: center;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    align-items: center;
+    border-radius: 4px;
+  }
+  
+  .main-info__icon {
+    width: 70px;
+    height: 70px;
+  }
+  
+  .main-info__subtitle {
+    margin-bottom: 10px;
+  }
+  
+  .main-info__desc {
+    color: $color-grey-a;
+  }
+  
+  
