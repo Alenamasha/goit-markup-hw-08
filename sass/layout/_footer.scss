@@ -1,14 +1,16 @@
 .footer {
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    padding: 60px 0;
-  }
+  padding: 60px 0;
+  text-align: center;
 
   & .container {
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 768px) {
       display: flex;
-      gap: 70px;
+      flex-wrap: wrap;
       align-items: baseline;
+      justify-content: center;
+      text-align: center;
+      align-items: baseline;
+      // text-align: left;
     }
   }
 
@@ -16,19 +18,14 @@
     color: $color-white;
   }
 }
+.footer-contakt {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
 
 .boxfoot {
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: baseline;
-    text-align: left;
-  }
-
   &__adress {
     padding-left: 0px;
     margin-bottom: 60px;
@@ -95,8 +92,9 @@
 .footer-social {
   margin-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 768px) {
     margin-bottom: 0;
+    margin-left: 165px;
   }
 
   @media screen and (min-width: 1200px) {
@@ -173,6 +171,8 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .footer-feedback__label {
@@ -214,7 +214,7 @@
   width: 200px;
   height: 50px;
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   transition-property: background-color;
@@ -227,6 +227,8 @@
 
   transition: filter 250ms $timing-function;
 
+  margin-top: 20px;
+
   &:active,
   &:hover,
   &:focus {
@@ -237,10 +239,13 @@
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25))
       drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
-
+  margin-top: 20px;
   @media screen and (min-width: 768px) {
     position: absolute;
     left: 0;
     left: 385px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-top: 0px;
   }
 }
