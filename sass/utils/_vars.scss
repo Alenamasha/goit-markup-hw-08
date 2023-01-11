@@ -1,19 +1,23 @@
+:root {
+  --indent: 30px;
+  --items:1;
+}
+
 /* Text colors */
 $color-black: #212121;
 $color-grey: #757575;
-$color-white: #FFFFFF;
+$color-white: #ffffff;
 $color-grey-a: rgba(117, 117, 117, 1);
-  
+
 /* BG colors */
-$color-backgraund-html: #F5F5F5;
-$color-backgraund-section: #FFFFFF;
-$color-background-main-footer: #2F303A;
-$color-backgraund-team: #F5F4FA;
-  
-  
-$color-logo-blue: #2196F3;
+$color-backgraund-html: #f5f5f5;
+$color-backgraund-section: #ffffff;
+$color-background-main-footer: #2f303a;
+$color-backgraund-team: #f5f4fa;
+
+$color-logo-blue: #2196f3;
 $icon: #afb1b8;
-  
+
 /* Others */
 $btn-radius: 25px;
 $indent: 30px;
