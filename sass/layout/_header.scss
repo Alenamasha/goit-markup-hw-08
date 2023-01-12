@@ -57,7 +57,11 @@
     border-radius: 2px;
     position: absolute;
     left: 0;
-    bottom: -34px;
+    bottom: -38px;
+
+    @media screen and(min-width:1200px) {
+      bottom: -34px;
+    }
   }
 }
 
