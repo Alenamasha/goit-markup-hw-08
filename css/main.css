@@ -506,8 +506,8 @@ textarea::placeholder {
 
 .main-hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin-left: auto;
   margin-right: auto;
   background-color: #212121;
@@ -518,19 +518,25 @@ textarea::placeholder {
   background-size: cover;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 1200px) {
+  .main-hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .main-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../../images/hero/hero@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../images/hero/hero@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
   .main-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../../images/hero/hero768.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../images/hero/hero768.jpg);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .main-hero {
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../../images/hero/hero768@2x.jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(0, 0, 0, 0.2)), url(../images/hero/hero768@2x.jpg);
   }
 }
 
@@ -572,7 +578,7 @@ textarea::placeholder {
 }
 
 .main-info {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -583,6 +589,7 @@ textarea::placeholder {
 @media screen and (min-width: 1200px) {
   .main-info__list {
     --items: 4;
+    padding: 94px 0;
   }
 }
 
@@ -747,6 +754,7 @@ textarea::placeholder {
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .mobile-socials-item:not(:last-child) {
@@ -818,11 +826,16 @@ textarea::placeholder {
 }
 
 .main-busy {
-  padding-bottom: 94px;
+  padding-bottom: 60px 0;
 }
 @media screen and (max-width: 1199.98px) {
   .main-busy {
     display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .main-busy {
+    padding-bottom: 94px 0;
   }
 }
 
@@ -836,7 +849,7 @@ textarea::placeholder {
 }
 
 .main-busy__list {
-  --items:3;
+  --items: 3;
 }
 
 .main-busy__aside {
@@ -1242,6 +1255,13 @@ textarea::placeholder {
 
 .main-team__title {
   text-align: center;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.185;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+  margin-top: 30px;
 }
 
 .main-team__desc {

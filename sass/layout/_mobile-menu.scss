@@ -126,6 +126,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
+  flex-wrap: wrap;
 }
 
 .mobile-socials-item {
@@ -160,12 +161,7 @@
 
   min-height: 40px;
   min-width: 40px;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
-
   margin-left: auto;
-  // padding: 0;
 
   color: black;
   background-color: transparent;
@@ -185,10 +181,6 @@
   }
 }
 
-// .mobile-menu__btn .mobile-menu__iconcross {
-//   display: none;
-// }
-
 .mobile-menu__btn.is-open .mobile-menu__iconcross {
   display: block;
 }
@@ -197,8 +189,12 @@
   display: none;
 }
 
+// .mobile-menu-item {
+//   display: flex;
+//   flex-wrap: wrap;
+// }
+
 .mobile-menu__container {
-  // display: none;
   position: absolute;
   text-align: center;
   top: 100%;

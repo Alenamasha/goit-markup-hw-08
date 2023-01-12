@@ -34,7 +34,13 @@
 
 .main-team__title {
   text-align: center;
-  // margin-top: 30px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.185;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $color-black;
+  margin-top: 30px;
 }
 
 .main-team__desc {
