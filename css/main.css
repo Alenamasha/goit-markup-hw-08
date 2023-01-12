@@ -133,7 +133,7 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
+  width: 450px;
   border-radius: 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   transform: translate(-50%, -50%);
@@ -204,10 +204,16 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 14px;
+  flex-shrink: inherit;
+  font-size: 12px;
   letter-spacing: 0.03em;
   margin-top: 20px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .modal-box__label.check {
+    font-size: 14px;
+  }
 }
 
 textarea {
@@ -319,7 +325,6 @@ textarea::placeholder {
 .check {
   /* display: block; */
   position: relative;
-  padding-left: 35px;
   /* margin-bottom: 12px; */
   cursor: pointer;
   font-size: 22px;
@@ -337,14 +342,14 @@ textarea::placeholder {
 
 /* Создаем кастомный checkbox */
 .modal-box__mark {
-  position: absolute;
-  top: 0;
-  left: 0;
   height: 16px;
   width: 15px;
   border: 1px solid #212121;
   border-radius: 2px;
-  margin-left: 24px;
+}
+
+.modal-box__inner {
+  margin-left: 8px;
 }
 
 /* При наведении указателя мыши перекрашиваем */
@@ -1357,6 +1362,11 @@ textarea::placeholder {
 
 .works-filtr__item {
   display: inline;
+}
+@media screen and (max-width: 1199.98px) {
+  .works-filtr__item {
+    margin-bottom: 15px;
+  }
 }
 
 .header-line {
