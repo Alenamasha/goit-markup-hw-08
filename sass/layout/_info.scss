@@ -1,14 +1,15 @@
 .main-info {
   padding: 60px 0;
+
+  @media screen and (min-width: 1200px) {
+    --items: 4;
+    padding: 94px 0;
+  }
 }
 
 .main-info__list {
   @media screen and (min-width: 768px) {
     --items: 2;
-  }
-  @media screen and (min-width: 1200px) {
-    --items: 4;
-    padding: 94px 0;
   }
 }
 

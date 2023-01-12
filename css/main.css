@@ -585,16 +585,16 @@ textarea::placeholder {
 .main-info {
   padding: 60px 0;
 }
+@media screen and (min-width: 1200px) {
+  .main-info {
+    --items: 4;
+    padding: 94px 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .main-info__list {
     --items: 2;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .main-info__list {
-    --items: 4;
-    padding: 94px 0;
   }
 }
 
@@ -888,7 +888,7 @@ textarea::placeholder {
   padding-top: 60px;
   padding-bottom: 60px;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .main-klients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1228,13 +1228,14 @@ textarea::placeholder {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
-
-.main-team__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (min-width: 1200px) {
+  .main-team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .main-team__list {
