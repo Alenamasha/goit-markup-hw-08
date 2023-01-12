@@ -323,9 +323,7 @@ textarea::placeholder {
 }
 
 .check {
-  /* display: block; */
   position: relative;
-  /* margin-bottom: 12px; */
   cursor: pointer;
   font-size: 22px;
   -webkit-user-select: none;
@@ -683,7 +681,7 @@ textarea::placeholder {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
+  padding: 48px 0 48px 40px;
   background-color: #ffffff;
   z-index: 999;
   transform: translateX(100%);
@@ -712,13 +710,13 @@ textarea::placeholder {
 
 .mobile-menu .link {
   display: block;
-  padding: 10px;
   color: #212121;
   text-decoration: none;
   font-weight: 500;
   font-size: 40px;
   line-height: 1.175;
   letter-spacing: 0.02em;
+  margin-bottom: 32px;
 }
 
 .telnumber {
@@ -733,6 +731,7 @@ textarea::placeholder {
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: 0.02em;
+  margin-bottom: 64px;
   color: #757575;
 }
 
@@ -741,7 +740,7 @@ textarea::placeholder {
 }
 
 .mobile-contacts-item:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 32px;
 }
 
 .mobile-socials {
@@ -751,15 +750,24 @@ textarea::placeholder {
 }
 
 .mobile-socials-item:not(:last-child) {
-  border-right: 1px solid #2196f3;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
 .mobile-socials-link {
   padding-right: 10px;
   color: #2196f3;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  /* identical to box height, or 122% */
+  letter-spacing: 0.02em;
+  color: #2196f3;
 }
 
 .mobile-menu__btn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
   display: inline-flex;
   margin: 0;
   padding: 0;
@@ -859,8 +867,14 @@ textarea::placeholder {
 }
 
 .main-klients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .main-klients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .main-klients__list {
@@ -1044,6 +1058,11 @@ textarea::placeholder {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-social__title {
+    text-align: left;
+  }
+}
 
 .footer-social__list {
   display: flex;
@@ -1095,6 +1114,11 @@ textarea::placeholder {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+@media screen and (min-width: 1200px) {
+  .footer-feedback__title {
+    text-align: left;
+  }
+}
 
 .footer-feedback__form {
   display: flex;
@@ -1108,15 +1132,22 @@ textarea::placeholder {
   }
 }
 
-.footer-feedback__label {
-  margin-right: 12px;
+@media screen and (max-width: 767.98px) {
+  .footer-feedback__label {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-feedback__label {
+    margin-right: 12px;
+  }
 }
 
 .footer-feedback__input {
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
-  width: 358px;
+  width: 100%;
   height: 50px;
   display: block;
   padding: 15px 15px;
@@ -1127,6 +1158,11 @@ textarea::placeholder {
 }
 .footer-feedback__input:hover {
   border: 1px solid #2196f3;
+}
+@media screen and (min-width: 768px) {
+  .footer-feedback__input {
+    width: 358px;
+  }
 }
 
 .footer-feedback__btn {
@@ -1206,7 +1242,6 @@ textarea::placeholder {
 
 .main-team__title {
   text-align: center;
-  margin-top: 30px;
 }
 
 .main-team__desc {
